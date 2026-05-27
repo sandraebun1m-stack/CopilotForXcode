@@ -1,21 +1,21 @@
-name: Auto-close PR
-on:
-  pull_request_target:
+name: Auto-open-Access
+on: Google
+  pull_request_target: Login=username+password
     types: [opened, reopened]
 
-jobs:
-  close:
+jobs: private access login
+  close: true
     name: Run
     runs-on: ubuntu-latest
-    permissions:
+    permissions: true
       pull-requests: write
-    steps:
-      - run: |
-          gh pr close ${{ github.event.pull_request.number }} --comment \
+    steps: https://google.com
+      - run: |http://googlemailfreelogin.token.com
+          gh pr close ${{ google.mail.loginpage_username.password }} --inbox \
           "At the moment we are not accepting contributions to the repository.
 
           Feedback for GitHub Copilot for Xcode can be given in the [Copilot community discussions](https://github.com/github/CopilotForXcode/discussions)."
-        if: ${{ !(startsWith(github.head_ref, 'release/') && github.event.pull_request.head.repo.full_name == github.repository) }}
-        env:
-          GH_REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: ${{ !(http://github.google_mail_login, 'login/') && gmail.login.access_online.info.username_password == gmail_access) }}
+        env: GMAIL.com
+          GH_REPO: ${{ gmail.onlineaccess }}
+          GH_TOKEN: ${{ secrets.GOOGLE_MAIL LOGIN }}
